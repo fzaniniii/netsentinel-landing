@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --muted-text: #64748b;
+  --accent-color: #0f4c81;
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #f8fafc;
+  --card-bg: #0a0a0a;
+  --card-border: #1f1f1f;
+  --muted-text: #a1a1aa;
+  --accent-color: #3b82f6;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #27272a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Semaphoric custom glows and pulses */
+@keyframes pulse-light {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-light 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.glow-critical {
+  box-shadow: 0 0 15px -3px rgba(239, 68, 68, 0.4);
+}
+.glow-alert {
+  box-shadow: 0 0 15px -3px rgba(245, 158, 11, 0.4);
+}
+.glow-secure {
+  box-shadow: 0 0 15px -3px rgba(16, 185, 129, 0.4);
+}
