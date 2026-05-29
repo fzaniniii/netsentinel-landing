@@ -6,6 +6,14 @@
 
 ***
 
+## 🔗 Repositório Principal (Código-fonte do Sistema)
+
+Esta Landing Page é a apresentação do ecossistema **NetSentinel**. Para visualizar o código-fonte completo da plataforma, incluindo a API Back-end (**C# / .NET 9**) e o Dashboard de monitoramento de vulnerabilidades, acesse o repositório principal da equipe:
+
+👉 **[jtave111/NetSentinel](https://github.com/jtave111/NetSentinel)**
+
+***
+
 ## 📌 Visão Geral
 
 Esta Landing Page foi construída como parte do front-end do projeto **NetSentinel (Sistema Gerencial de Inventário e Patch Management)**.
@@ -68,5 +76,5 @@ Abra [http://localhost:3000](http://localhost:3000) para ver o resultado.
 ***
 
 <p align="center">
-  Desenvolvido com ❤️ para o projeto NetSentinel
+  Desenvolvido para o projeto NetSentinel
 </p>
